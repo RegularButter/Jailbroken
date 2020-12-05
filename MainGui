@@ -1,0 +1,871 @@
+  local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Top = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Left = Instance.new("ImageButton")
+local Down = Instance.new("ImageButton")
+local Seperator = Instance.new("Frame")
+local Tabs = Instance.new("ScrollingFrame")
+local LPlayer = Instance.new("TextButton")
+local Tele = Instance.new("TextButton")
+local Teleports = Instance.new("Frame")
+local Garage = Instance.new("TextButton")
+local Jewelry = Instance.new("TextButton")
+local DonutShop = Instance.new("TextButton")
+local Bank = Instance.new("TextButton")
+local CriminalBase1 = Instance.new("TextButton")
+local CriminalBase2 = Instance.new("TextButton")
+local HelicopterPad = Instance.new("TextButton")
+local PoliceBase = Instance.new("TextButton")
+local TrainSpawn = Instance.new("TextButton")
+local GasStation = Instance.new("TextButton")
+local GunStore = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Localplayer = Instance.new("Frame")
+local Doors = Instance.new("TextButton")
+local ShotGun = Instance.new("TextButton")
+local TpToCar = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local WalkSpeedX = Instance.new("TextButton")
+local PFL = Instance.new("TextButton")
+local Pistol = Instance.new("TextButton")
+local AK47 = Instance.new("TextButton")
+local M4A1 = Instance.new("TextButton")
+local infiniteammo = Instance.new("TextButton")
+local NoBars = Instance.new("TextButton")
+local Gravity = Instance.new("TextButton")
+local AutoA = Instance.new("TextButton")
+local RemoveAll = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Main.Position = UDim2.new(0.22708334, 0, 0.473305941, 0)
+Main.Selectable = true
+Main.Size = UDim2.new(0, 587, 0, 296)
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Top.Size = UDim2.new(0, 587, 0, 42)
+
+TextLabel.Parent = Top
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, -0.0238095243, 0)
+TextLabel.Size = UDim2.new(0, 280, 0, 42)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Peanut Butter"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Left.Name = "Left"
+Left.Parent = Top
+Left.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Left.BackgroundTransparency = 1.000
+Left.BorderSizePixel = 0
+Left.Position = UDim2.new(0.918228269, 0, 0.095238097, 0)
+Left.Size = UDim2.new(0, 37, 0, 33)
+Left.Image = "rbxassetid://144168163"
+
+Down.Name = "Down"
+Down.Parent = Top
+Down.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Down.BackgroundTransparency = 1.000
+Down.BorderSizePixel = 0
+Down.Position = UDim2.new(0.918228269, 0, 0.095238097, 0)
+Down.Rotation = -90.000
+Down.Size = UDim2.new(0, 37, 0, 33)
+Down.Visible = false
+Down.Image = "rbxassetid://144168163"
+
+Seperator.Name = "Seperator"
+Seperator.Parent = Main
+Seperator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Seperator.BorderSizePixel = 0
+Seperator.Position = UDim2.new(0, 0, 0.141891882, 0)
+Seperator.Size = UDim2.new(0, 587, 0, 5)
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Main
+Tabs.Active = true
+Tabs.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(0, 0, 0.158783779, 0)
+Tabs.Size = UDim2.new(0, 117, 0, 249)
+Tabs.ScrollBarThickness = 0
+
+LPlayer.Name = "LPlayer"
+LPlayer.Parent = Tabs
+LPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LPlayer.BackgroundTransparency = 1.000
+LPlayer.Position = UDim2.new(0, 0, 0, 5)
+LPlayer.Size = UDim2.new(0, 117, 0, 26)
+LPlayer.Font = Enum.Font.SourceSans
+LPlayer.Text = "Local Player"
+LPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+LPlayer.TextScaled = true
+LPlayer.TextSize = 14.000
+LPlayer.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+LPlayer.TextWrapped = true
+
+Tele.Name = "Tele"
+Tele.Parent = Tabs
+Tele.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tele.BackgroundTransparency = 1.000
+Tele.Position = UDim2.new(0, 0, 0, 33)
+Tele.Size = UDim2.new(0, 117, 0, 26)
+Tele.Font = Enum.Font.SourceSans
+Tele.Text = "Teleports"
+Tele.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tele.TextScaled = true
+Tele.TextSize = 14.000
+Tele.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Tele.TextWrapped = true
+
+Teleports.Name = "Teleports"
+Teleports.Parent = Main
+Teleports.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Teleports.BorderSizePixel = 0
+Teleports.Position = UDim2.new(0.199318573, 0, 0.162162155, 0)
+Teleports.Size = UDim2.new(0, 470, 0, 248)
+
+Garage.Name = "Garage"
+Garage.Parent = Teleports
+Garage.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Garage.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Garage.BorderSizePixel = 0
+Garage.Position = UDim2.new(0.0170212779, 0, 0.0201612897, 0)
+Garage.Size = UDim2.new(0, 118, 0, 27)
+Garage.Font = Enum.Font.SourceSans
+Garage.Text = "Garage"
+Garage.TextColor3 = Color3.fromRGB(255, 255, 255)
+Garage.TextSize = 14.000
+Garage.TextWrapped = true
+
+Jewelry.Name = "Jewelry"
+Jewelry.Parent = Teleports
+Jewelry.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Jewelry.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Jewelry.BorderSizePixel = 0
+Jewelry.Position = UDim2.new(0.282978714, 0, 0.0201612897, 0)
+Jewelry.Size = UDim2.new(0, 118, 0, 27)
+Jewelry.Font = Enum.Font.SourceSans
+Jewelry.Text = "Jewelry"
+Jewelry.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jewelry.TextSize = 14.000
+Jewelry.TextWrapped = true
+
+DonutShop.Name = "Donut Shop"
+DonutShop.Parent = Teleports
+DonutShop.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+DonutShop.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DonutShop.BorderSizePixel = 0
+DonutShop.Position = UDim2.new(0.548936129, 0, 0.0201612897, 0)
+DonutShop.Size = UDim2.new(0, 118, 0, 27)
+DonutShop.Font = Enum.Font.SourceSans
+DonutShop.Text = "Donut Shop"
+DonutShop.TextColor3 = Color3.fromRGB(255, 255, 255)
+DonutShop.TextSize = 14.000
+DonutShop.TextWrapped = true
+
+Bank.Name = "Bank"
+Bank.Parent = Teleports
+Bank.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Bank.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Bank.BorderSizePixel = 0
+Bank.Position = UDim2.new(0.548936129, 0, 0.165322572, 0)
+Bank.Size = UDim2.new(0, 118, 0, 27)
+Bank.Font = Enum.Font.SourceSans
+Bank.Text = "bank"
+Bank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bank.TextSize = 14.000
+Bank.TextWrapped = true
+
+CriminalBase1.Name = "Criminal Base1"
+CriminalBase1.Parent = Teleports
+CriminalBase1.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+CriminalBase1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CriminalBase1.BorderSizePixel = 0
+CriminalBase1.Position = UDim2.new(0.282978684, 0, 0.310483873, 0)
+CriminalBase1.Size = UDim2.new(0, 118, 0, 27)
+CriminalBase1.Font = Enum.Font.SourceSans
+CriminalBase1.Text = "M4A1"
+CriminalBase1.TextColor3 = Color3.fromRGB(255, 255, 255)
+CriminalBase1.TextSize = 14.000
+CriminalBase1.TextWrapped = true
+
+CriminalBase2.Name = "Criminal Base 2"
+CriminalBase2.Parent = Teleports
+CriminalBase2.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+CriminalBase2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CriminalBase2.BorderSizePixel = 0
+CriminalBase2.Position = UDim2.new(0.548936129, 0, 0.310483873, 0)
+CriminalBase2.Size = UDim2.new(0, 118, 0, 27)
+CriminalBase2.Font = Enum.Font.SourceSans
+CriminalBase2.Text = "infAmmo"
+CriminalBase2.TextColor3 = Color3.fromRGB(255, 255, 255)
+CriminalBase2.TextSize = 14.000
+CriminalBase2.TextWrapped = true
+
+HelicopterPad.Name = "Helicopter Pad"
+HelicopterPad.Parent = Teleports
+HelicopterPad.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+HelicopterPad.BorderColor3 = Color3.fromRGB(255, 255, 255)
+HelicopterPad.BorderSizePixel = 0
+HelicopterPad.Position = UDim2.new(0.282978714, 0, 0.161290348, 0)
+HelicopterPad.Size = UDim2.new(0, 118, 0, 27)
+HelicopterPad.Font = Enum.Font.SourceSans
+HelicopterPad.Text = "No Cell Bars"
+HelicopterPad.TextColor3 = Color3.fromRGB(255, 255, 255)
+HelicopterPad.TextSize = 14.000
+HelicopterPad.TextWrapped = true
+
+PoliceBase.Name = "Police Base"
+PoliceBase.Parent = Teleports
+PoliceBase.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+PoliceBase.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PoliceBase.BorderSizePixel = 0
+PoliceBase.Position = UDim2.new(0.282978684, 0, 0.443548411, 0)
+PoliceBase.Size = UDim2.new(0, 118, 0, 27)
+PoliceBase.Font = Enum.Font.SourceSans
+PoliceBase.Text = "Police Base"
+PoliceBase.TextColor3 = Color3.fromRGB(255, 255, 255)
+PoliceBase.TextSize = 14.000
+PoliceBase.TextWrapped = true
+
+TrainSpawn.Name = "Train Spawn"
+TrainSpawn.Parent = Teleports
+TrainSpawn.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+TrainSpawn.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TrainSpawn.BorderSizePixel = 0
+TrainSpawn.Position = UDim2.new(0.0170212388, 0, 0.310483873, 0)
+TrainSpawn.Size = UDim2.new(0, 118, 0, 27)
+TrainSpawn.Font = Enum.Font.SourceSans
+TrainSpawn.Text = "Train Spawn"
+TrainSpawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+TrainSpawn.TextSize = 14.000
+TrainSpawn.TextWrapped = true
+
+GasStation.Name = "Gas Station"
+GasStation.Parent = Teleports
+GasStation.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+GasStation.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GasStation.BorderSizePixel = 0
+GasStation.Position = UDim2.new(0.0170212388, 0, 0.443548411, 0)
+GasStation.Size = UDim2.new(0, 118, 0, 27)
+GasStation.Font = Enum.Font.SourceSans
+GasStation.Text = "Gas Station"
+GasStation.TextColor3 = Color3.fromRGB(255, 255, 255)
+GasStation.TextSize = 14.000
+GasStation.TextWrapped = true
+
+GunStore.Name = "\\nGun Store"
+GunStore.Parent = Teleports
+GunStore.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+GunStore.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GunStore.BorderSizePixel = 0
+GunStore.Position = UDim2.new(0.0150748491, 0, 0.164774299, 0)
+GunStore.Size = UDim2.new(0, 118, 0, 27)
+GunStore.Font = Enum.Font.SourceSans
+GunStore.Text = "Gun Store"
+GunStore.TextColor3 = Color3.fromRGB(255, 255, 255)
+GunStore.TextSize = 14.000
+GunStore.TextWrapped = true
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.908432424, 0)
+TextLabel_2.Size = UDim2.new(0, 117, 0, 27)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "More Coming Soon"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_3.Parent = Main
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, -0.0949459597, 0)
+TextLabel_3.Size = UDim2.new(0, 587, 0, 27)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Made by RegularButter#3052"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Localplayer.Name = "Localplayer"
+Localplayer.Parent = Main
+Localplayer.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Localplayer.BorderSizePixel = 0
+Localplayer.Position = UDim2.new(0.199318573, 0, 0.162162155, 0)
+Localplayer.Size = UDim2.new(0, 470, 0, 248)
+Localplayer.Visible = false
+
+Doors.Name = "Doors"
+Doors.Parent = Localplayer
+Doors.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Doors.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Doors.BorderSizePixel = 0
+Doors.Position = UDim2.new(0.0170212779, 0, 0.0201612897, 0)
+Doors.Size = UDim2.new(0, 118, 0, 27)
+Doors.Font = Enum.Font.SourceSans
+Doors.Text = "No Doors"
+Doors.TextColor3 = Color3.fromRGB(255, 255, 255)
+Doors.TextSize = 14.000
+Doors.TextWrapped = true
+
+ShotGun.Name = "Shot Gun"
+ShotGun.Parent = Localplayer
+ShotGun.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+ShotGun.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ShotGun.BorderSizePixel = 0
+ShotGun.Position = UDim2.new(0.282978714, 0, 0.0201612897, 0)
+ShotGun.Size = UDim2.new(0, 118, 0, 27)
+ShotGun.Font = Enum.Font.SourceSans
+ShotGun.Text = "ShotGun"
+ShotGun.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShotGun.TextSize = 14.000
+ShotGun.TextWrapped = true
+
+TpToCar.Name = "TpToCar"
+TpToCar.Parent = Localplayer
+TpToCar.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+TpToCar.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TpToCar.BorderSizePixel = 0
+TpToCar.Position = UDim2.new(0.548936129, 0, 0.0201612897, 0)
+TpToCar.Size = UDim2.new(0, 118, 0, 27)
+TpToCar.Font = Enum.Font.SourceSans
+TpToCar.Text = "Teleport To Car"
+TpToCar.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpToCar.TextSize = 14.000
+TpToCar.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Localplayer
+Noclip.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Noclip.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.814893603, 0, 0.0201612897, 0)
+Noclip.Size = UDim2.new(0, 76, 0, 27)
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "Noclip(E)"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+WalkSpeedX.Name = "WalkSpeed(X)"
+WalkSpeedX.Parent = Localplayer
+WalkSpeedX.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+WalkSpeedX.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeedX.BorderSizePixel = 0
+WalkSpeedX.Position = UDim2.new(0.0150748491, 0, 0.164774299, 0)
+WalkSpeedX.Size = UDim2.new(0, 118, 0, 27)
+WalkSpeedX.Font = Enum.Font.SourceSans
+WalkSpeedX.Text = "WalkSpeed(X)"
+WalkSpeedX.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeedX.TextSize = 14.000
+WalkSpeedX.TextWrapped = true
+
+PFL.Name = "PF(L)"
+PFL.Parent = Localplayer
+PFL.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+PFL.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PFL.BorderSizePixel = 0
+PFL.Position = UDim2.new(0.281213522, 0, 0.164774299, 0)
+PFL.Size = UDim2.new(0, 118, 0, 27)
+PFL.Font = Enum.Font.SourceSans
+PFL.Text = "Platform(L)"
+PFL.TextColor3 = Color3.fromRGB(255, 255, 255)
+PFL.TextSize = 14.000
+PFL.TextWrapped = true
+
+Pistol.Name = "Pistol"
+Pistol.Parent = Localplayer
+Pistol.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Pistol.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Pistol.BorderSizePixel = 0
+Pistol.Position = UDim2.new(0.548936129, 0, 0.165322572, 0)
+Pistol.Size = UDim2.new(0, 118, 0, 27)
+Pistol.Font = Enum.Font.SourceSans
+Pistol.Text = "Pistol"
+Pistol.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pistol.TextSize = 14.000
+Pistol.TextWrapped = true
+
+AK47.Name = "AK47"
+AK47.Parent = Localplayer
+AK47.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+AK47.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AK47.BorderSizePixel = 0
+AK47.Position = UDim2.new(0.0170212388, 0, 0.310483873, 0)
+AK47.Size = UDim2.new(0, 118, 0, 27)
+AK47.Font = Enum.Font.SourceSans
+AK47.Text = "AK47"
+AK47.TextColor3 = Color3.fromRGB(255, 255, 255)
+AK47.TextSize = 14.000
+AK47.TextWrapped = true
+
+M4A1.Name = "M4A1"
+M4A1.Parent = Localplayer
+M4A1.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+M4A1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+M4A1.BorderSizePixel = 0
+M4A1.Position = UDim2.new(0.282978684, 0, 0.310483873, 0)
+M4A1.Size = UDim2.new(0, 118, 0, 27)
+M4A1.Font = Enum.Font.SourceSans
+M4A1.Text = "M4A1"
+M4A1.TextColor3 = Color3.fromRGB(255, 255, 255)
+M4A1.TextSize = 14.000
+M4A1.TextWrapped = true
+
+infiniteammo.Name = "infiniteammo"
+infiniteammo.Parent = Localplayer
+infiniteammo.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+infiniteammo.BorderColor3 = Color3.fromRGB(255, 255, 255)
+infiniteammo.BorderSizePixel = 0
+infiniteammo.Position = UDim2.new(0.548936129, 0, 0.310483873, 0)
+infiniteammo.Size = UDim2.new(0, 118, 0, 27)
+infiniteammo.Font = Enum.Font.SourceSans
+infiniteammo.Text = "infAmmo"
+infiniteammo.TextColor3 = Color3.fromRGB(255, 255, 255)
+infiniteammo.TextSize = 14.000
+infiniteammo.TextWrapped = true
+
+NoBars.Name = "NoBars"
+NoBars.Parent = Localplayer
+NoBars.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+NoBars.BorderColor3 = Color3.fromRGB(255, 255, 255)
+NoBars.BorderSizePixel = 0
+NoBars.Position = UDim2.new(0.0148935914, 0, 0.443548411, 0)
+NoBars.Size = UDim2.new(0, 118, 0, 27)
+NoBars.Font = Enum.Font.SourceSans
+NoBars.Text = "No Cell Bars"
+NoBars.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoBars.TextSize = 14.000
+NoBars.TextWrapped = true
+
+Gravity.Name = "Gravity"
+Gravity.Parent = Localplayer
+Gravity.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Gravity.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Gravity.BorderSizePixel = 0
+Gravity.Position = UDim2.new(0.282978684, 0, 0.443548411, 0)
+Gravity.Size = UDim2.new(0, 118, 0, 27)
+Gravity.Font = Enum.Font.SourceSans
+Gravity.Text = "Gravity"
+Gravity.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gravity.TextSize = 14.000
+Gravity.TextWrapped = true
+
+AutoA.Name = "AutoA"
+AutoA.Parent = Localplayer
+AutoA.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+AutoA.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoA.BorderSizePixel = 0
+AutoA.Position = UDim2.new(0.548936129, 0, 0.443548411, 0)
+AutoA.Size = UDim2.new(0, 118, 0, 27)
+AutoA.Font = Enum.Font.SourceSans
+AutoA.Text = "Auto Arrest"
+AutoA.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoA.TextSize = 14.000
+AutoA.TextWrapped = true
+
+RemoveAll.Name = "Remove All"
+RemoveAll.Parent = Localplayer
+RemoveAll.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+RemoveAll.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RemoveAll.BorderSizePixel = 0
+RemoveAll.Position = UDim2.new(0.814893603, 0, 0.161290348, 0)
+RemoveAll.Size = UDim2.new(0, 76, 0, 27)
+RemoveAll.Font = Enum.Font.SourceSans
+RemoveAll.Text = "Remove All"
+RemoveAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveAll.TextSize = 14.000
+RemoveAll.TextWrapped = true
+
+-- Scripts:
+
+local function ZGCGLD_fake_script() -- Seperator.Color3 
+	local script = Instance.new('LocalScript', Seperator)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0 
+	
+	while wait(0.1) do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		
+		counter = counter + 0.01
+	end
+end
+coroutine.wrap(ZGCGLD_fake_script)()
+local function GSWUW_fake_script() -- LPlayer.LocalScript 
+	local script = Instance.new('LocalScript', LPlayer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Localplayer.Visible = true
+	end)
+end
+coroutine.wrap(GSWUW_fake_script)()
+local function MXYA_fake_script() -- Tele.LocalScript 
+	local script = Instance.new('LocalScript', Tele)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Teleports.Visible = true
+	end)
+end
+coroutine.wrap(MXYA_fake_script)()
+local function EDCLGKD_fake_script() -- Garage.LocalScript 
+	local script = Instance.new('LocalScript', Garage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-342.130798, 19.3135223, 1182.73669) + Vector3.new(1,0,0)
+	end)
+end
+coroutine.wrap(EDCLGKD_fake_script)()
+local function SCZJUUI_fake_script() -- Jewelry.LocalScript 
+	local script = Instance.new('LocalScript', Jewelry)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(124.339157,17.9125443,1318.82336) + Vector3.new(1,0,0)
+	end)
+end
+coroutine.wrap(SCZJUUI_fake_script)()
+local function MYMP_fake_script() -- DonutShop.LocalScript 
+	local script = Instance.new('LocalScript', DonutShop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(273, 18, -1807) + Vector3.new(1,0,0)
+	end)
+end
+coroutine.wrap(MYMP_fake_script)()
+local function CSNH_fake_script() -- Bank.LocalScript 
+	local script = Instance.new('LocalScript', Bank)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(33.3059082,-1.67172456,803.200806) + Vector3.new(1,0,0)
+	end)
+end
+coroutine.wrap(CSNH_fake_script)()
+local function DHDCSQB_fake_script() -- CriminalBase1.LocalScript 
+	local script = Instance.new('LocalScript', CriminalBase1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-222.339157, 17.9125443, 1575.82336) + Vector3.new(1,0,0)
+	end)
+end
+coroutine.wrap(DHDCSQB_fake_script)()
+local function JBJTOC_fake_script() -- CriminalBase2.LocalScript 
+	local script = Instance.new('LocalScript', CriminalBase2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1818, 49, -1657.4) + Vector3.new(1,0,0)
+	end)
+end
+coroutine.wrap(JBJTOC_fake_script)()
+local function CSBCT_fake_script() -- HelicopterPad.LocalScript 
+	local script = Instance.new('LocalScript', HelicopterPad)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1176.4231, 59.7911148, -1572.6908) + Vector3.new(1,0,0)
+	end)
+end
+coroutine.wrap(CSBCT_fake_script)()
+local function MLVDNVW_fake_script() -- PoliceBase.LocalScript 
+	local script = Instance.new('LocalScript', PoliceBase)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1130.11426, 17.950058, -1593.09766) + Vector3.new(1,0,0)
+	end)
+end
+coroutine.wrap(MLVDNVW_fake_script)()
+local function GOXDX_fake_script() -- TrainSpawn.LocalScript 
+	local script = Instance.new('LocalScript', TrainSpawn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1954.95007, 68.0448606, -603.844116)
+	end)
+end
+coroutine.wrap(GOXDX_fake_script)()
+local function DHBO_fake_script() -- GasStation.LocalScript 
+	local script = Instance.new('LocalScript', GasStation)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1578.24731, 17.8978615, 711.207214)
+	end)
+end
+coroutine.wrap(DHBO_fake_script)()
+local function EKKYVZE_fake_script() -- GunStore.LocalScript 
+	local script = Instance.new('LocalScript', GunStore)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-24.4, 18, -1763) + Vector3.new(1,0,0)
+	end)
+end
+coroutine.wrap(EKKYVZE_fake_script)()
+local function SLYMQ_fake_script() -- Doors.LocalScript 
+	local script = Instance.new('LocalScript', Doors)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(workspace.Doors:GetChildren()) do
+			v:Destroy()
+		end
+	end)
+end
+coroutine.wrap(SLYMQ_fake_script)()
+local function PVYIZA_fake_script() -- ShotGun.LocalScript 
+	local script = Instance.new('LocalScript', ShotGun)
+
+	script.Parent.MouseButton1Down:connect(function()
+		local hit = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,0,-3)
+	
+		a = Instance.new("Part", workspace)
+		a.Anchored = true
+		a.Position = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,0,-3)
+		a.CanCollide = false
+	
+		for i, v in pairs(game:GetService("Workspace").Givers:GetChildren()) do
+			if v.Name == "Station" then
+				for a, b in pairs(v:GetChildren()) do
+					if b:IsA("StringValue") then
+						if b.Value == "Shotgun" then
+							v.CFrame = CFrame.new(hit)
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(PVYIZA_fake_script)()
+local function QIOENUU_fake_script() -- TpToCar.LocalScript 
+	local script = Instance.new('LocalScript', TpToCar)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	end)
+end
+coroutine.wrap(QIOENUU_fake_script)()
+local function UXSCQMA_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		noclip = false
+		game:GetService("RunService").Stepped:Connect(function()
+			if noclip then
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+				
+			end	
+		end)
+	
+	
+		local player = game.Players.LocalPlayer
+		local mo = player:GetMouse()
+	
+		mo.KeyDown:Connect(function(k)
+			if k == "e" then
+				noclip = not noclip
+				player.Character.Humanoid:ChangeState(11)
+			end
+		end)
+	end)
+end
+coroutine.wrap(UXSCQMA_fake_script)()
+local function LTZKO_fake_script() -- WalkSpeedX.LocalScript 
+	local script = Instance.new('LocalScript', WalkSpeedX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		walkspeed = false
+		game:GetService("RunService").Stepped:Connect(function()
+			if walkspeed then
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+				
+			end	
+		end)
+	
+	
+		local player = game.Players.LocalPlayer
+		local mo = player:GetMouse()
+	
+		mo.KeyDown:Connect(function(k)
+			if k == "x" then
+				walkspeed = not walkspeed
+				player.Character.Humanoid.WalkSpeed = 150
+			end
+		end)
+	end)
+end
+coroutine.wrap(LTZKO_fake_script)()
+local function RBMK_fake_script() -- PFL.LocalScript 
+	local script = Instance.new('LocalScript', PFL)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+	local mo = player:GetMouse()
+	
+	mo.KeyDown:Connect(function(k)
+		if k == "l" then
+			local part = Instance.new("Part")
+			part.Parent = workspace
+			part.Size = Vector3.new(10,1,10)
+				part.CFrame = game.Players.LocalPlayer.Character.LeftFoot.CFrame
+				part.Anchored = true
+				part.BrickColor = BrickColor.Random()
+				part.Transparency = 0.5
+				part.Orientation = Vector3.new(0,0,0)
+				part.Material = "Grass"
+				wait(0.1)
+				part.Transparency = 1
+				part:Destroy()
+		    end
+		end)
+	end)
+end
+coroutine.wrap(RBMK_fake_script)()
+local function ZTFOS_fake_script() -- Pistol.LocalScript 
+	local script = Instance.new('LocalScript', Pistol)
+
+	script.Parent.MouseButton1Down:connect(function()
+		local hit = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,0,-3)
+	
+		a = Instance.new("Part", workspace)
+		a.Anchored = true
+		a.Position = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,0,-3)
+		a.CanCollide = false
+	
+		for i, v in pairs(game:GetService("Workspace").Givers:GetChildren()) do
+			if v.Name == "Station" then
+				for a, b in pairs(v:GetChildren()) do
+					if b:IsA("StringValue") then
+						if b.Value == "Pistol" then
+							v.CFrame = CFrame.new(hit)
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(ZTFOS_fake_script)()
+local function BWVW_fake_script() -- AK47.LocalScript 
+	local script = Instance.new('LocalScript', AK47)
+
+	script.Parent.MouseButton1Down:connect(function()
+		local hit = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,0,-3)
+	
+		a = Instance.new("Part", workspace)
+		a.Anchored = true
+		a.Position = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,0,-3)
+		a.CanCollide = false
+	
+		for i, v in pairs(game:GetService("Workspace").Givers:GetChildren()) do
+			if v.Name == "ShootingRange" then
+				for a, b in pairs(v:GetChildren()) do
+					if b:IsA("StringValue") then
+						if b.Value == "AK47" then
+							v.CFrame = CFrame.new(hit)
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(BWVW_fake_script)()
+local function XLRL_fake_script() -- M4A1.LocalScript 
+	local script = Instance.new('LocalScript', M4A1)
+
+	script.Parent.MouseButton1Down:connect(function()
+		local hit = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,0,-3)
+	
+		a = Instance.new("Part", workspace)
+		a.Anchored = true
+		a.Position = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,0,-3)
+		a.CanCollide = false
+	
+		for i, v in pairs(game:GetService("Workspace").Givers:GetChildren()) do
+			if v.Name == "Station" then
+				for a, b in pairs(v:GetChildren()) do
+					if b:IsA("StringValue") then
+						if b.Value == "RifleSWAT" then
+							v.CFrame = CFrame.new(hit)
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(XLRL_fake_script)()
+local function DOYFF_fake_script() -- infiniteammo.LocalScript 
+	local script = Instance.new('LocalScript', infiniteammo)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService('Players').LocalPlayer.PlayerGui.MainGui.Ammo.MagSize.RobloxLocked=true
+	end)
+end
+coroutine.wrap(DOYFF_fake_script)()
+local function OFCCSIR_fake_script() -- NoBars.LocalScript 
+	local script = Instance.new('LocalScript', NoBars)
+
+	script.Parent.MouseButton1Click:Connect(function()
+			game.Workspace.Cells:Remove()
+	end)
+end
+coroutine.wrap(OFCCSIR_fake_script)()
+local function GKTZR_fake_script() -- Gravity.LocalScript 
+	local script = Instance.new('LocalScript', Gravity)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if Teleport19 == true then
+			Teleport19 = false
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		else
+			Teleport19 = true
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+		end
+	end)
+end
+coroutine.wrap(GKTZR_fake_script)()
+local function OYQESZ_fake_script() -- AutoA.LocalScript 
+	local script = Instance.new('LocalScript', AutoA)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Player = game.Players.LocalPlayer
+		wait(0.5)
+		for i,v in pairs(game.Teams.Criminal:GetPlayers()) do
+			repeat
+				wait()
+				Player.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
+			until v.Team.Name ~= "Criminal"
+		end	
+	end)
+end
+coroutine.wrap(OYQESZ_fake_script)()
+local function JDXJBE_fake_script() -- RemoveAll.LocalScript 
+	local script = Instance.new('LocalScript', RemoveAll)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    game.Workspace:ClearAllChildren()
+	end)
+end
+coroutine.wrap(JDXJBE_fake_script)()
+local function VKQRBNN_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.Draggable = true
+end
+coroutine.wrap(VKQRBNN_fake_script)()
